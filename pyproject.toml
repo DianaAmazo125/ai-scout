@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-scout"
+version = "0.1.0"
+description = "AI-скаут: лидогенератор во фриланс-чатах Telegram"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "telethon>=1.36,<2",
+    "pydantic>=2.7,<3",
+    "pydantic-settings>=2.3,<3",
+    "aiosqlite>=0.20,<1",
+    "PyYAML>=6.0,<7",
+    "structlog>=24.1,<26",
+]
+
+[project.optional-dependencies]
+ai = ["anthropic>=0.34,<1"]
+dev = [
+    "pytest>=8.0,<9",
+    "pytest-asyncio>=0.23,<1",
+    "ruff>=0.5,<1",
+]
+
+[project.scripts]
+ai-scout = "ai_scout.main:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

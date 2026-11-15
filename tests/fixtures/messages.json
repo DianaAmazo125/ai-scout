@@ -1,0 +1,78 @@
+{
+  "lead_python_parser": {
+    "chat_id": -1001234567890,
+    "chat_title": "Freelance Chat",
+    "chat_username": "freelance_chat",
+    "message_id": 101,
+    "sender_id": 111,
+    "sender_username": "ivan",
+    "sender_first_name": "Иван",
+    "text": "Нужен парсер карточек товара с Wildberries. Python + requests, выгрузка в CSV. Бюджет обсудим.",
+    "date": "2026-11-05T09:15:00+00:00"
+  },
+  "lead_website": {
+    "chat_id": -1009876543210,
+    "chat_title": "Веб-разработка | Заказы",
+    "message_id": 202,
+    "sender_id": 222,
+    "sender_username": "anna",
+    "sender_first_name": "Анна",
+    "sender_last_name": "Петрова",
+    "text": "Нужен сайт-визитка на html/css, 3 страницы, адаптив. Срок — неделя.",
+    "date": "2026-11-05T09:20:00+00:00"
+  },
+  "lead_python_parser_duplicate": {
+    "chat_id": -1001234567890,
+    "chat_title": "Freelance Chat",
+    "chat_username": "freelance_chat",
+    "message_id": 101,
+    "sender_id": 111,
+    "sender_username": "ivan",
+    "sender_first_name": "Иван",
+    "text": "Нужен парсер карточек товара с Wildberries. Python + requests, выгрузка в CSV. Бюджет обсудим.",
+    "date": "2026-11-05T09:15:00+00:00"
+  },
+  "forwarded": {
+    "chat_id": -1001234567890,
+    "chat_title": "Freelance Chat",
+    "chat_username": "freelance_chat",
+    "message_id": 103,
+    "sender_id": 333,
+    "sender_first_name": "Пересылка",
+    "text": "Ищу разработчика Python для срочной задачи.",
+    "date": "2026-11-05T09:25:00+00:00",
+    "forwarded": true
+  },
+  "from_bot": {
+    "chat_id": -1001234567890,
+    "chat_title": "Freelance Chat",
+    "chat_username": "freelance_chat",
+    "message_id": 104,
+    "sender_id": 444,
+    "sender_username": "jobs_bot",
+    "sender_first_name": "Jobs Bot",
+    "text": "Вакансия: Python-разработчик, удалённо.",
+    "date": "2026-11-05T09:30:00+00:00",
+    "is_bot": true
+  },
+  "empty_media": {
+    "chat_id": -1001234567890,
+    "chat_title": "Freelance Chat",
+    "chat_username": "freelance_chat",
+    "message_id": 105,
+    "sender_id": 555,
+    "sender_first_name": "Медиа",
+    "text": null,
+    "date": "2026-11-05T09:35:00+00:00"
+  },
+  "private_client": {
+    "chat_id": 555000111,
+    "chat_title": null,
+    "chat_first_name": "Мария",
+    "message_id": 301,
+    "sender_id": 555000111,
+    "sender_first_name": "Мария",
+    "text": "Здравствуйте! Нужен небольшой бот на Python для учёта заявок.",
+    "date": "2026-11-05T09:40:00+00:00"
+  }
+}

@@ -1,0 +1,48 @@
+# Секреты (api_id/api_hash, токены, ключи) живут ТОЛЬКО в .env.
+# Здесь — обычные настройки, без секретов.
+
+telegram:
+  session_path: data/scout.session
+  # @username или числовой ID чата. Пусто = запускай с --all или --chat.
+  source_chats: []
+  ignore_forwards: true
+  ignore_bots: true
+  # false: читаем только новые сообщения после запуска.
+  catch_up: false
+
+storage:
+  db_path: data/scout.db
+
+logging:
+  level: INFO
+  json_logs: false
+
+# --- Этап 3: фильтры (пока не используются) ---
+filters:
+  whitelist:
+    - "нужен сайт"
+    - "сделать бота"
+    - "написать парсер"
+    - "python"
+    - "html/css"
+  stopwords:
+    - "1с"
+    - "битрикс"
+    - "java"
+    - "android"
+    - "за отзыв"
+  min_length: 40
+  max_length: 4000
+
+# --- Этап 4: Claude (пока не используется) ---
+ai:
+  model: claude-sonnet-4-5
+  max_difficulty: 3
+  max_input_chars: 4000
+  concurrency: 2
+  daily_budget_usd: 3.0
+
+# --- Этап 2: очередь (пока не используется) ---
+pipeline:
+  queue_size: 200
+  workers: 2
